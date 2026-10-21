@@ -1,6 +1,8 @@
 # yudanying.com
 
-Static personal website. No build step: edit `index.html` and `style.css` directly.
+Static personal website, live at https://yudanying.github.io. No build step: edit `index.html` and `style.css` directly.
+
+To publish changes: double-click `publish.command`, or run `git add -A && git commit -m "Update" && git push` in this folder.
 
 ## Folder layout
 
