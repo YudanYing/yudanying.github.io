@@ -99,8 +99,7 @@ section, .hero { scroll-margin-top: 72px; }
 /* Sections */
 main { max-width: var(--max); margin: 0 auto; }
 section { margin-bottom: 48px; }
-.about { margin-bottom: 40px; }
-.about p { margin: 0; font-size: 1.05rem; line-height: 1.6; }
+.bio { margin: 0 0 12px; line-height: 1.6; }
 h2 {
   font-size: 1.35rem;
   font-weight: normal;
