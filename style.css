@@ -68,7 +68,7 @@ section, .hero { scroll-margin-top: 72px; }
   margin: 56px auto 24px;
   display: flex;
   gap: 36px;
-  align-items: flex-start;
+  align-items: center;
 }
 .headshot {
   width: 220px;
@@ -99,7 +99,7 @@ section, .hero { scroll-margin-top: 72px; }
 /* Sections */
 main { max-width: var(--max); margin: 0 auto; }
 section { margin-bottom: 48px; }
-.bio { margin: 0 0 12px; line-height: 1.6; }
+.bio { margin: 0 0 12px; line-height: 1.6; text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
 h2 {
   font-size: 1.35rem;
   font-weight: normal;
@@ -156,7 +156,7 @@ footer {
   .site-nav a { font-size: 0.95rem; }
   .headshot { width: 160px; }
   .hero-text h1 { font-size: 1.8rem; }
-  .abstract { text-align: left; }
+  .abstract, .bio { text-align: left; hyphens: manual; -webkit-hyphens: manual; }
 }
 
 @media print {
