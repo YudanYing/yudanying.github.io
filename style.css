@@ -59,6 +59,13 @@ a:hover { text-decoration: underline; }
 .site-nav a.active { font-weight: 600; }
 main.subpage { margin-top: 48px; }
 main.subpage h2 { font-size: 1.7rem; margin-bottom: 20px; }
+.school { font-size: 1.15rem; font-weight: bold; margin: 30px 0 2px; }
+h2 + .school { margin-top: 0; }
+.role { margin: 0 0 10px; color: var(--muted); font-style: italic; }
+.courses { list-style: none; padding: 0; margin: 0; }
+.courses li { margin: 0 0 10px; }
+.course { display: block; }
+.detail { display: block; color: var(--muted); font-size: 0.95rem; }
 html { scroll-behavior: smooth; }
 section, .hero { scroll-margin-top: 72px; }
 
