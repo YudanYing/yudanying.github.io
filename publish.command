@@ -9,10 +9,15 @@ else
   echo "Warning: academic CV PDF not found at expected path; keeping the existing files/Ying_CV.pdf"
 fi
 JMP="/Users/Yudan_1/Library/CloudStorage/Dropbox/My AI Agent/Job/JMP/JMP_Yudan Ying_latest.pdf"
-if [ -f "$JMP" ]; then
-  cp "$JMP" files/Ying_JMP.pdf && echo "Copied latest JMP."
+# The JMP is refreshed only once it has been posted (i.e. files/Ying_JMP.pdf already exists).
+if [ -f files/Ying_JMP.pdf ]; then
+  if [ -f "$JMP" ]; then
+    cp "$JMP" files/Ying_JMP.pdf && echo "Copied latest JMP."
+  else
+    echo "Warning: JMP PDF not found at expected path; keeping the existing files/Ying_JMP.pdf"
+  fi
 else
-  echo "Warning: JMP PDF not found at expected path; keeping the existing files/Ying_JMP.pdf"
+  echo "JMP not posted yet; skipping."
 fi
 git add -A
 if git diff --cached --quiet; then
