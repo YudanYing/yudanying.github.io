@@ -10,9 +10,9 @@ else
 fi
 JMP="/Users/Yudan_1/Library/CloudStorage/Dropbox/My AI Agent/Job/JMP/JMP_Yudan Ying_latest.pdf"
 if [ -f "$JMP" ]; then
-  cp "$JMP" files/Ying_Sagawa_JMP.pdf && echo "Copied latest JMP."
+  cp "$JMP" files/Ying_JMP.pdf && echo "Copied latest JMP."
 else
-  echo "Warning: JMP PDF not found at expected path; keeping the existing files/Ying_Sagawa_JMP.pdf"
+  echo "Warning: JMP PDF not found at expected path; keeping the existing files/Ying_JMP.pdf"
 fi
 git add -A
 if git diff --cached --quiet; then
