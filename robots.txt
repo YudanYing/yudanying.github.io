@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /files/Ying_JMP.pdf
 Sitemap: https://yudanying.github.io/sitemap.xml
