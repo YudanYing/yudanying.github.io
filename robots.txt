@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /files/Ying_JMP.pdf
+Disallow: /files/Ying_CapitalFlowComposition.pdf
 Sitemap: https://yudanying.github.io/sitemap.xml

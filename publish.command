@@ -19,6 +19,14 @@ if [ -f files/Ying_JMP.pdf ]; then
 else
   echo "JMP not posted yet; skipping."
 fi
+CFC="/Users/Yudan_1/Library/CloudStorage/Dropbox/My AI Agent/Job/Other paper/capital_flow_composition_latest.pdf"
+if [ -f files/Ying_CapitalFlowComposition.pdf ]; then
+  if [ -f "$CFC" ]; then
+    cp "$CFC" files/Ying_CapitalFlowComposition.pdf && echo "Copied latest capital flow paper."
+  else
+    echo "Warning: capital flow PDF not found at expected path; keeping the existing files/Ying_CapitalFlowComposition.pdf"
+  fi
+fi
 git add -A
 if git diff --cached --quiet; then
   echo "Nothing changed since the last publish."
