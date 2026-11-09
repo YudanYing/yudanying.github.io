@@ -1,12 +1,12 @@
 #!/bin/bash
 # Double-click this file to publish the website.
-# It copies the latest academic CV and JMP PDFs into files/, then commits and pushes everything.
+# It copies CV_Yudan Ying_latest.pdf and the newest dated JMP PDF into files/, then commits and pushes everything.
 cd "$(dirname "$0")"
-CV="/Users/Yudan_1/Library/CloudStorage/Dropbox/My AI Agent/Job/CV/CV_Yudan Ying_Academic.pdf"
+CV="/Users/Yudan_1/Library/CloudStorage/Dropbox/My AI Agent/Job/CV/CV_Yudan Ying_latest.pdf"
 if [ -f "$CV" ]; then
   cp "$CV" files/Ying_CV.pdf && echo "Copied latest CV."
 else
-  echo "Warning: academic CV PDF not found at expected path; keeping the existing files/Ying_CV.pdf"
+  echo "Warning: CV_Yudan Ying_latest.pdf not found; keeping the existing files/Ying_CV.pdf"
 fi
 JMP_DIR="/Users/Yudan_1/Library/CloudStorage/Dropbox/My AI Agent/Job/JMP"
 # Newest dated draft, JMP_Yudan Ying_YYYYMMDD.pdf; the date in the name sorts chronologically.
